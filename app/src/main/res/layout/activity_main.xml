@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Genshin Calculator"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <Button
+        android:id="@+id/characterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Character"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/weaponButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weapon"
+        android:layout_below="@id/characterButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+</RelativeLayout>
