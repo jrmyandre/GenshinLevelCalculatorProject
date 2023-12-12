@@ -10,9 +10,11 @@
         android:id="@+id/expWasted"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:textSize="18sp"
+        android:layout_margin="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/expWasted"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

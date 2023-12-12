@@ -25,7 +25,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.genshinlevelcalculator.models.CharacterCalculateRequest;
 import com.example.genshinlevelcalculator.models.CharacterResultDTO;
 import com.example.genshinlevelcalculator.models.Material;
-import com.example.genshinlevelcalculator.models.WeaponCalculateRequest;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
@@ -149,7 +148,7 @@ public class CharacterCalculatorPage extends AppCompatActivity {
                                 int expWasted = characterResultDTO.ExpWasted;
                                 Material[] materials = characterResultDTO.Items;
                                 Intent intent = new Intent(CharacterCalculatorPage.this, ResultPage.class);
-                                intent.putExtra("expWasted", expWasted);
+                                intent.putExtra("expWasted", String.valueOf(expWasted));
                                 intent.putExtra("materialList", materials);
                                 startActivity(intent);
 
